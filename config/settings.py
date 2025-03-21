@@ -39,6 +39,7 @@ THIRD_PARTY_APPS = ["rest_framework"]
 CUSTOM_APPS = [
     "common.apps.CommonConfig",
     "users.apps.UsersConfig",
+    "posts.apps.PostsConfig",
 ]
 
 SYSTEM_APPS = [
