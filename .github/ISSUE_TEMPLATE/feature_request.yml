@@ -1,0 +1,46 @@
+---
+name: "Feature Request"
+description: "새로운 기능 개발이나 개선 작업을 위한 이슈 템플릿"
+title: "[Feature] <기능 이름 작성>"
+labels: ["feature"]
+assignees:
+  - kikiru328
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ✨ 작업 목표
+        어떤 기능을 개발하려고 하나요?
+  - type: textarea
+    id: goal
+    attributes:
+      label: 작업 목표
+      placeholder: ex) 사용자 회원가입 기능 개발
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## ✅ 세부 작업 항목
+        세부 작업을 체크리스트로 나열해주세요.
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: 작업 항목
+      options:
+        - label: 모델 설계
+        - label: API 작성
+        - label: 테스트 코드 작성
+        - label: 문서화 (API 문서, README 등)
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 📎 참고 사항
+        논의가 필요한 점이나 참고해야 할 내용이 있다면 작성해주세요.
+  - type: textarea
+    id: note
+    attributes:
+      label: 참고 사항
+      placeholder: ex) 이메일 인증 방식 논의 필요
