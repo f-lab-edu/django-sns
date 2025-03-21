@@ -3,3 +3,4 @@
 *.py[cod]
 *.env
 **/migrations/
+db.sqlite3
